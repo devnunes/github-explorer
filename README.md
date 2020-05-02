@@ -1,44 +1,80 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="src/assets/github-background.svg" alt="Project logo"></a>
+</p>
 
-## Available Scripts
+<h3 align="center">github-explorer</h3>
 
-In the project directory, you can run:
+<div align="center">
 
-### `yarn start`
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![Top languege](https://img.shields.io/github/languages/top/matheusopenc/github-explorer)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</div>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+<p align="center"> Few lines describing your project.
+    <br>
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📝 Table of Contents
 
-### `yarn build`
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [Authors](#authors)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧐 About <a name = "about"></a>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+This project is a result of one module of bootcamp GoStack, by Rocketseat. Allows the user to search repositories on the public API of Github and see how many stars, forks and issues the project have.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a href="https://githubexplorernunes.netlify.app/" ><img width=950px src="src/assets/github-explorer-live.png" alt="Print live"></a>
 
-### `yarn eject`
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+What things you need to install the software and how to install them.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+yarn@1.22.4^
 
-## Learn More
+node@13.13.0^
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After you clone the repository in your machine and all the requirements are set.
+You should run
+
+```
+yarn install
+```
+
+And then
+
+```
+yarn start
+```
+
+The project will start on htttp://localhost:3000/.
+Make sure this port :3000 is available to run the project.
+
+## 🎈 Usage <a name="usage"></a>
+
+On the input of home page you should enter the user/repo to make a search.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [ReactJs](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Styled Components](https://styled-components.com/) - Visual primitives for the component age.
+- [TypeScript](https://expressjs.com/) - a language for application-scale JavaScript development.
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@rocketseat](https://github.com/rocketseat) - Idea & Initial work
