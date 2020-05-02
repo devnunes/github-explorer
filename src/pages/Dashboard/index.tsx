@@ -2,6 +2,7 @@ import React, { useState, useEffect, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { FiChevronRight } from 'react-icons/fi';
 import api from '../../services/api';
+import TagManager from 'react-gtm-module';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -15,6 +16,12 @@ interface Repository {
     avatar_url: string;
   };
 }
+
+const tagManagerPush = {
+  dataLayer: {
+    event: 'event',
+  },
+};
 
 const Dashboard: React.FC = () => {
   const [newRepo, setNewRepo] = useState('');
@@ -30,6 +37,10 @@ const Dashboard: React.FC = () => {
 
     return [];
   });
+
+  useEffect(() => {
+    TagManager.dataLayer(tagManagerPush);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem(
