@@ -17,11 +17,11 @@ interface Repository {
   };
 }
 
-const tagManagerPush = {
-  dataLayer: {
-    event: 'event',
-  },
-};
+// const tagManagerPush = {
+//   dataLayer: {
+//     event: 'event',
+//   },
+// };
 
 const Dashboard: React.FC = () => {
   const [newRepo, setNewRepo] = useState('');
@@ -38,9 +38,9 @@ const Dashboard: React.FC = () => {
     return [];
   });
 
-  useEffect(() => {
-    TagManager.dataLayer(tagManagerPush);
-  }, []);
+  // useEffect(() => {
+  //   TagManager.dataLayer(tagManagerPush);
+  // }, []);
 
   useEffect(() => {
     localStorage.setItem(
@@ -83,7 +83,9 @@ const Dashboard: React.FC = () => {
           placeholder="Digite o nome do repositório"
         />
 
-        <button type="submit">Pesquisar</button>
+        <button data-gtm="on" type="submit">
+          Pesquisar
+        </button>
       </Form>
 
       {inputError && <Error> {inputError} </Error>}
